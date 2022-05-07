@@ -124,7 +124,7 @@
     grid-row: 2 / 3;
 }
 
-.grid__item:hover {
+.grid__item:hover, .grid__item:focus {
     z-index: 100;
     position: absolute;
     transform: scale(1.5);
