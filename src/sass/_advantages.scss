@@ -11,10 +11,9 @@
     margin: -1px;
 }
 .advantages{
-    background-color: var(--editional-color)
+    background-color: var(--bg-color-light-pink)
 }
 .advantages__container{
-    padding-top: 300px;
     padding-bottom: 120px;
 }
 .advantages__list{
@@ -23,13 +22,13 @@
 
 }
 .advantages__item{
-    position: relative;
+    padding-top: 85px;
 
         &:nth-child(1) {
             margin-right: 142px;
-            &>.advantages__description::before{
+            &>.advantages__number::before{
                 position: absolute;
-                top: -50px;
+                top: -85px;
                 content: "";
                 width: 32px;
                 height: 50px;
@@ -40,9 +39,9 @@
         
         &:nth-child(2) {
             margin-right: 106px;
-            &>.advantages__description::before {
+            &>.advantages__number::before {
                 position: absolute;
-                top: -50px;
+                top: -85px;
                 content: "";
                 width: 50px;
                 height: 50px;
@@ -52,9 +51,9 @@
         }
         &:nth-child(3) {
             margin-right: 123px;
-            &>.advantages__description::before {
+            &>.advantages__number::before {
                 position: absolute;
-                top: -50px;
+                top: -85px;
                 content: "";
                 width: 44px;
                 height: 50px;
@@ -64,7 +63,8 @@
         }
 }
 .advantages__number{
-    font-family: 'Titan One';
+    position: relative;
+    font-family: var(--secondary-fonts);
     font-weight: 400;
     font-size: 58px;
     line-height: 1.14;
@@ -72,17 +72,18 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     
-    color: #D41443;
+    color: var(--accent-color);
+    margin-bottom: 16px;
     
 }
 .advantages__description{
     width: 288px;
-    font-family: var(--basic-font);
+    font-family: var(--main-fonts);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.76;
     letter-spacing: 0.02em;
     
-    color: var(--editional-color);
+    color: var(--text-color-black);
 }

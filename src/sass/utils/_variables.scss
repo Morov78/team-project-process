@@ -1,4 +1,5 @@
 :root {
+  // pro mne
   --akcent-color: #D41443;
   --second-hover: #C7133E;
   --editional-color: #000000;
@@ -7,4 +8,32 @@
   // --gradient: rgba(47, 48, 58, 0.4);
   --kubik: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --basic-font: DM Sans;
+
+  /* Шрифти */
+  --main-fonts: 'DM Sans',
+    sans-serif;
+  --secondary-fonts: 'Titan One', sans-serif;
+  /* Кольори фону */
+  --bg-color-light-pink: #FFF5F6;
+  --bg-color-pink: #FFB8CA;
+  --bg-color-coffee: #F0D1A5;
+  --bg-color-green: #C2E297;
+  --bg-color-light-grey: #FAFAFA;
+  --bg-color-menu: #E17992;
+  /* Кольори шрифтів */
+  --text-color-light: #FFFFFF;
+  --text-color-light-pink: #FFA5BA;
+  --text-color-black: #000000;
+  --text-color-light-grey: #ECEBEB;
+  --text-color-grey: #907E82;
+  /* Інші кольори */
+  --accent-color: #D41443;
+  --accent-color-hover: #C7133E;
+  --line-color-grey: #E1E1E1;
+  --line-color-pink: #E18298;
+  --icon-color: #FEA5BB;
+
+
+
+
 }
