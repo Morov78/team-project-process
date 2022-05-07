@@ -7,7 +7,6 @@
     margin-bottom: 16px;
 
     font-family: var(--secondary-fonts), cursive;
-    font-weight: 400;
     font-size: 30px;
     line-height: 1.33;
     letter-spacing: 0.04em;
@@ -31,7 +30,6 @@
     margin-bottom: 258px;
 
     font-family: var(--secondary-fonts), cursive;
-    font-weight: 400;
     font-size: 58px;
     line-height: 1.14;
     letter-spacing: 0.06em;
@@ -223,12 +221,10 @@
       }
     }
   }
-
   &__subtitle {
     margin-bottom: 32px;
 
     font-family: var(--secondary-fonts);
-    font-weight: 400;
     font-size: 30px;
     line-height: 1.13;
     letter-spacing: 0.04em;
