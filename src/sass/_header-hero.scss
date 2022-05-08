@@ -56,9 +56,7 @@
   }
 
   &__btn {
-    width: 160px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 47px;
 
     border-radius: 22px;
     border: transparent;
@@ -93,7 +91,7 @@
   &__title {
     letter-spacing: 0.04em;
     font-family: var(--secondary-fonts);
-    font-weight: 400;
+
     text-transform: uppercase;
     color: var(--main-color);
 
@@ -134,7 +132,7 @@
 
     color: var(--accent-color);
     font-family: var(--main-fonts);
-    font-weight: 400;
+
     background-color: var(--main-color);
     cursor: pointer;
 
@@ -149,18 +147,14 @@
     }
 
     @include mq(tablet) {
-      width: 82px;
-      padding-top: 8px;
-      padding-bottom: 8px;
+      padding: 8px 12px;
 
       font-size: 8px;
       line-height: 1.25;
     }
 
     @include mq(desktop) {
-      width: 138px;
-      padding-top: 11px;
-      padding-bottom: 11px;
+      padding: 11px 19px;
 
       font-size: 14px;
       line-height: 1.28;
@@ -187,18 +181,14 @@
     }
 
     @include mq(tablet) {
-      width: 62px;
-      padding-top: 7px;
-      padding-bottom: 7px;
+      padding: 7px 14px;
 
       font-size: 8px;
       line-height: 1.25;
     }
 
     @include mq(desktop) {
-      width: 107px;
-      padding-top: 11px;
-      padding-bottom: 11px;
+      padding: 11px 24px;
 
       font-size: 14px;
       line-height: 1.28;
@@ -215,8 +205,6 @@
     font-family: var(--main-color);
     font-weight: 400;
     color: var(--main-color);
-
-    color: #ffffff;
 
     @include mq(tablet) {
       font-size: 8px;
