@@ -1,12 +1,15 @@
-.contacts {
-    background-image: url(/src/img/background__contacts.png), linear-gradient(0deg, #fff5f6 79%, #fff 0, #fff 0);
+.contacts { 
+    @media screen and (min-width: 1280px) {
+        
+    
+    background-image: url(/img/background__contacts.png), linear-gradient(0deg, #fff5f6 79%, #fff 0, #fff 0);
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: contain;
-    padding-top: 118px;
+    background-size: inherit;
+    // padding-top: 118px;  
     background-position-y: 35%;
     font-size: 16px;
-
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1279.5px) {
 
@@ -14,7 +17,9 @@
         padding-bottom: 165px;
         font-size: 14px;
     }
-
+    
+        
+    
     background-image: linear-gradient(0deg, #fff5f6 93%, #fff 0, #fff 0);
     padding-top: 80px;
     padding-bottom: 113px;
@@ -23,8 +28,8 @@
     font-size: 12px;
     line-height: 1.86;
     text-align: center;
-    letter-spacing: 0,
-    4em;
+    letter-spacing: 0.04em;
+    
 }
 
 
@@ -32,9 +37,11 @@
 
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: -10px;
+    // margin: -10px;
     padding-bottom: 81px;
+    gap:32px;
 
     @media screen and (max-width: 767.5px) and (min-width: 1280px) {
         padding-bottom: 54px;
@@ -72,16 +79,19 @@
     background: var(--main-color);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (min-width:768px) {
+    
+     @media screen and (min-width:768px) {
         width: calc(33.33333% - 20px);
         height: 100%;
         margin: 10px;
 
     }
 
+
+
     @media screen and (min-width: 1280px) {
         max-width: 330px;
+        margin: 0;
     }
          &:hover,
          &:focus {
