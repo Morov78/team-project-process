@@ -40,8 +40,16 @@
                 content: "";
                 width: 32px;
                 height: 50px;
-                background-image: url("../img/advantages/milk.png");
+                background-image: url("../img/advantages/icon1.png");
                 background-repeat: no-repeat;
+                background-size: cover;
+                //retina
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url("../img/advantages/icon1@2x.png");   
+                }
 
                 @media screen and (max-width:767.5px) {
                     top: -61px;
@@ -52,8 +60,7 @@
                     
                 }
             }
-        }
-        
+        }    
         &:nth-child(2) {
             
             &>.advantages__number::before {
@@ -62,9 +69,17 @@
                 content: "";
                 width: 50px;
                 height: 50px;
-                background-image: url("../img/advantages/apple.png");
+                background-image: url("../img/advantages/icon2.png");
                 background-repeat: no-repeat;
-
+                background-size: cover;
+                
+                //retina
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url("../img/advantages/icon2@2x.png");
+                }
                 @media screen and (max-width:767.5px) {
                     top: -61px;
                 }
@@ -81,9 +96,17 @@
                 content: "";
                 width: 44px;
                 height: 50px;
-                background-image: url("../img/advantages/heart.png");
+                background-image: url("../img/advantages/icon3.png");
                 background-repeat: no-repeat;
+                background-size: cover;
 
+                //retina
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url("../img/advantages/icon3@2x.png");   
+                }
                 @media screen and (max-width:767.5px) {
                     top: -61px;
                 }
