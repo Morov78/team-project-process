@@ -1,0 +1,268 @@
+.background {
+  background-color: var(--bg-color-pink);
+}
+.header {
+  padding-top: 8px;
+
+  @include mq(tablet) {
+    padding-top: 32px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 35px;
+  }
+
+  &__wrapper {
+    @extend %align-flex;
+  }
+  &__nav {
+    @include mq(notDesktop) {
+      display: none;
+    }
+  }
+  &__list {
+    @include mq(desktop) {
+      display: flex;
+    }
+  }
+  &__item {
+    @include mq(desktop) {
+      margin-right: 35px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  &__link {
+    display: inline-block;
+
+    font-family: var(--main-fonts);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+
+    color: var(--main-color);
+
+    @include transition(color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+      line-height: 1.31;
+    }
+  }
+
+  &__btn {
+    width: 160px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    border-radius: 22px;
+    border: transparent;
+    background-color: var(--main-color);
+
+    font-family: var(--main-fonts);
+    @extend %middle-font;
+    color: var(--accent-color);
+    cursor: pointer;
+
+    @include transition(color);
+    &:hover,
+    &:focus {
+      background-color: var(--background-hover);
+    }
+
+    @include mq(desktop) {
+      margin-left: auto;
+    }
+  }
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.hero {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    letter-spacing: 0.04em;
+    font-family: var(--secondary-fonts);
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--main-color);
+
+    @include mq(mobile) {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+
+    @include mq(tablet) {
+      font-size: 22px;
+      line-height: 1.13;
+    }
+  }
+
+  @include mq(desktop) {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+  &__title--accent {
+    color: var(--accent-color);
+
+    @include mq(mobile) {
+      font-size: 30px;
+    }
+
+    @include mq(tablet) {
+      font-size: 26px;
+    }
+  }
+
+  @include mq(desktop) {
+    font-size: 42px;
+  }
+
+  &__btn {
+    border-radius: 20px;
+    border: transparent;
+
+    color: var(--accent-color);
+    font-family: var(--main-fonts);
+    font-weight: 400;
+    background-color: var(--main-color);
+    cursor: pointer;
+
+    @include transition(color);
+    &:hover,
+    &:focus {
+      background-color: var(--background-hover);
+    }
+
+    @include mq(mobile-only) {
+      display: none;
+    }
+
+    @include mq(tablet) {
+      width: 82px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    @include mq(desktop) {
+      width: 138px;
+      padding-top: 11px;
+      padding-bottom: 11px;
+
+      font-size: 14px;
+      line-height: 1.28;
+    }
+  }
+  &__btn-accent {
+    border-radius: 20px;
+    border: transparent;
+
+    color: var(--main-color);
+    font-family: var(--main-fonts);
+    font-weight: 400;
+    background-color: var(--accent-color);
+    cursor: pointer;
+
+    @include transition(color);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color-hover);
+    }
+
+    @include mq(mobile-only) {
+      display: none;
+    }
+
+    @include mq(tablet) {
+      width: 62px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    @include mq(desktop) {
+      width: 107px;
+      padding-top: 11px;
+      padding-bottom: 11px;
+
+      font-size: 14px;
+      line-height: 1.28;
+    }
+  }
+
+  &__box {
+    @include mq(mobile-only) {
+      display: none;
+    }
+  }
+
+  &__text-left {
+    font-family: var(--main-color);
+    font-weight: 400;
+    color: var(--main-color);
+
+    color: #ffffff;
+
+    @include mq(tablet) {
+      font-size: 8px;
+      line-height: 1.5;
+    }
+
+    @include mq(desktop) {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+
+  &__wrapper-right {
+    @include mq(mobile-only) {
+      display: none;
+    }
+  }
+
+  &__number {
+    font-family: var(--secondary-fonts);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+
+    color: var(--accent-color);
+    @include mq(tablet) {
+      font-size: 28px;
+      line-height: 1.14;
+    }
+    @include mq(desktop) {
+      font-size: 46px;
+      line-height: 1.13;
+    }
+  }
+  &__text-right {
+    font-family: var(--main-fonts);
+    color: var(--main-color);
+    font-weight: 400;
+
+    @include mq(tablet) {
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    @include mq(desktop) {
+      font-size: 14px;
+      line-height: 1.28;
+    }
+  }
+}
