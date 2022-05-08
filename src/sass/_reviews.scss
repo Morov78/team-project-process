@@ -1,0 +1,34 @@
+// <!-- Reviews -->
+.reviews {
+padding-bottom: 164px;
+padding-top: 120px;
+}
+.reviews__hidden {
+  display: none;
+}
+.reviews__main {
+  line-height: 186%;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.reviews__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviews__written {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 142px;
+  padding-right: 142px;
+  margin-top: 47px;
+  margin-bottom: 39px;
+  width: 1134px;
+  height: 138px;
+  background: #fafafa;
+}
+.reviews__address {
+  font-size: 20px;
+  margin-top: 36px;
+}
