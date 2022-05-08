@@ -3,9 +3,7 @@
   padding-bottom: 164px;
   padding-top: 120px;
 }
-.reviews__hidden {
-  display: none;
-}
+
 .reviews__list {
   line-height: 1.86;
   text-align: center;
@@ -29,7 +27,7 @@
   max-height: 138px;
   background: #fafafa;
 }
-.reviews__icons {
+.reviews__icon {
     
   fill: #e1e1e1;
   transform: rotate(-180deg);
@@ -43,5 +41,9 @@
   font-size: 20px;
   margin-top: 36px;
 }
-.slider__text:before {
+.slider__text {
+  border-bottom: 1px solid #E1E1E1;
+}
+.reviews__dots {
+  display: block;
 }
