@@ -112,8 +112,6 @@
   }
 }
 
-
-
 .hero {
   position: relative;
   display: flex;
@@ -441,23 +439,19 @@
   }
 }
 
-
-
 .logo {
-  
-    margin-right: auto;
-  
-}
-
-
-
-.header__nav{
   margin-right: auto;
 }
 
+.header__nav {
+  margin-right: auto;
+}
 
-
-.hidden.is{
+.hidden.is {
   display: none;
 }
 
+// scroll
+html {
+  scroll-behavior: smooth;
+}
