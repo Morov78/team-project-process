@@ -18,7 +18,6 @@
 .reviews__written {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-left: 142px;
   padding-right: 142px;
   padding-top: 47px;
@@ -28,9 +27,8 @@
   background: #fafafa;
 }
 .reviews__icon {
-    
   fill: #e1e1e1;
-  transform: rotate(-180deg);
+  
 }
 
 .reviews__slider {
@@ -41,9 +39,22 @@
   font-size: 20px;
   margin-top: 36px;
 }
+
 .slider__text {
-  border-bottom: 1px solid #E1E1E1;
+  position: relative;
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center bottom -2px;
+  background-size: 100% 3px;
+  background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
+}
+.reviews__icon:before {
+ 
+  position: absolute;
+  content: '';
+  
+  
 }
 .reviews__dots {
-  display: block;
+  display: inline-flex;
 }
