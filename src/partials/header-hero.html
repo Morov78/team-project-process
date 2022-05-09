@@ -1,9 +1,54 @@
 <div class="background">
-  <header class="header">
-    <div class="container header__wrapper">
-      <a href="" class="logo"
-        >logo
-        <img src="" alt="" />
+  <div class="container">
+    <header class="header">
+      <!-- Мобильное меню -->
+      <div class="mobile-menu">
+        <button class="header__btn-menu" type="button">
+          Buy now
+          <svg
+            class="header__icon"
+            width="6"
+            height="10"
+            viewBox="0 0 6 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L5 5L1 9"
+              stroke="#D41443"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <nav class="header__nav-mobile">
+          <ul class="header__list-mobile">
+            <li class="header__item-mobile">
+              <a class="header__link-mobile" href="">Home</a>
+            </li>
+            <li class="header__item-mobile">
+              <a class="header__link-mobile" href="">About us</a>
+            </li>
+            <li class="header__item-mobile">
+              <a class="header__link-mobile" href="">How it’s made?</a>
+            </li>
+            <li class="header__item-mobile">
+              <a class="header__link-mobile" href="">Our products</a>
+            </li>
+            <li class="header__item-mobile">
+              <a class="header__link-mobile" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Коонец моб меню -->
+
+      <a href="" class="logo">
+        <picture>
+          <source srcset="img/logo/logo1.png 1x, img/logo/logo1@2x.png 2x" />
+          <img src="img/logo/logo1.png" alt="" />
+        </picture>
       </a>
       <nav class="header__nav">
         <ul class="header__list">
@@ -24,19 +69,34 @@
           </li>
         </ul>
       </nav>
-
-      <button class="header__btn--menu">
-        open-mobile
-        <!-- <svg>
-          <use class="header__btn-open" href=""></use>
-          <use class="header__btn-close" href=""></use>
-        </svg> -->
+      <button class="header__btn-menu">
+        <svg width="20px" height="12px">
+          <use class="header__btn-open" href="img/symbol-defs.svg#icon-Burger"></use>
+          <use class="header__btn-close" href="img/symbol-defs.svg#icon-close"></use>
+        </svg>
       </button>
-      <button class="header__btn" type="button">Buy now</button>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="container hero__wrap">
+      <button class="header__btn" type="button">
+        Buy now
+        <svg
+          class="header__icon"
+          width="6"
+          height="10"
+          viewBox="0 0 6 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1L5 5L1 9"
+            stroke="#D41443"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <section class="hero">
       <div class="hero__wrapper-left">
         <h1 class="hero__title">
           ice cream made with <span class="hero__title--accent">passion</span>
@@ -50,28 +110,132 @@
           </li>
         </ul>
         <div class="hero__box">
-          <img class="hero__img--left" src="" alt="" />
-          <p class="hero__text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-          </p>
-          <button class="hero__modal-btn" type="button"></button>
+          <picture class="hero__img-left">
+            <source
+              srcset="img/header/milk-md.png 1x, img/header/milk-md@2x.png 2x"
+              media="(min-width:768px) and (max-width:1279.5px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="img/header/milk-lg.png 1x, img/header/milk-lg@2x.png 2x"
+              media="(min-width:1280px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="img/header/milk-md.webp 1x, img/header/milk-md@2x.webp 2x"
+              media="(min-width:768px) and (max-width:1279.5px)"
+              type="image/webp"
+            />
+            <source
+              srcset="img/header/milk-lg.webp 1x, img/header/milk-lg@2x.webp 2x"
+              media="(min-width:1280px)"
+              type="image/webp"
+            />
+            <img src="img/header/milk-lg.png" alt="" />
+          </picture>
+
+          <div class="hero__thumb">
+            <p class="hero__text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+            <button class="hero__modal-btn" type="button">
+              <picture>
+                <source
+                  srcset="img/header/arrow-right-md.png 1x, img/header/arrow-right-md@2x.png 2x"
+                  media="(min-width:768px) and (max-width:1279.5px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="img/header/arrow-right-lg.png 1x, img/header/arrow-right-lg@2x.png 2x"
+                  media="(min-width:1280px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="img/header/arrow-right-md.webp 1x, img/header/arrow-right-md@2x.webp 2x"
+                  media="(min-width:768px) and (max-width:1279.5px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/header/arrow-right-lg.webp 1x, img/header/arrow-right-lg@2x.webp 2x"
+                  media="(min-width:1280px)"
+                  type="image/webp"
+                />
+                <img src="img/header/arrow-right-lg.png" alt="" />
+              </picture>
+            </button>
+          </div>
         </div>
       </div>
-      <img class="hero__img-middle" src="" alt="" />
-      <div class="hero__wrapper-right">
-        <ul class="hero__list-right">
-          <li class="hero__item-right">
-            <span class="hero__number">16</span>
-            <p class="hero__text-right">cafes</p>
-          </li>
-          <li class="hero__item-right">
-            <span class="hero__number">23</span>
-            <p class="hero__text-right">food trucks</p>
-          </li>
-        </ul>
-        <img class="hero__img-right" src="" alt="" />
-      </div>
-    </div>
-  </section>
+
+      <ul class="hero__list-right">
+        <li class="hero__item-right">
+          <span class="hero__number">16</span>
+          <p class="hero__text-right">cafes</p>
+        </li>
+        <li class="hero__item-right hero__text-right--place">
+          <span class="hero__number">23</span>
+          <p class="hero__text-right">food trucks</p>
+        </li>
+      </ul>
+      <picture class="hero__img-middle">
+        <source
+          srcset="img/header/con-sm.png 1x, img/header/con-sm@2x.png 2x"
+          media="(max-width:767px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="img/header/cone-md.png 1x, img/header/cone-md@2x.png 2x"
+          media="(min-width:768px) and (max-width:1279.5px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="img/header/cone-lg.png 1x, img/header/cone-lg@2x.png 2x"
+          media="(min-width:1280px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="img/header/con-sm.webp 1x, img/header/con-sm@2x.webp 2x"
+          media="(max-width:767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="img/header/cone-md.webp 1x, img/header/cone-md@2x.webp 2x"
+          media="(min-width:768px) and (max-width:1279.5px)"
+          type="image/webp"
+        />
+        <source
+          srcset="img/header/cone-lg.webp 1x, img/header/cone-lg@2x.webp 2x"
+          media="(min-width:1280px)"
+          type="image/webp"
+        />
+
+        <img src="img/header/cone-lg.png" alt="Ice Cream" />
+      </picture>
+      <picture class="hero__img-right">
+        <source
+          srcset="img/header/girl-md.png 1x, img/header/girl-md@2x.png 2x"
+          media="(min-width:768px) and (max-width:1279.5px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="img/header/girl-lg.png 1x, img/header/girl-lg@2x.png 2x"
+          media="(min-width:1280px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="img/header/girl-md.webp 1x, img/header/girl-md@2x.webp 2x"
+          media="(min-width:768px) and (max-width:1279.5px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="img/header/girl-lg.webp 1x, img/header/girl-lg@2x.webp 2x"
+          media="(min-width:1280px)"
+          type="image/webp"
+        />
+
+        <img src="img/header/girl-lg.png" alt="Soo Tasty" />
+      </picture>
+    </section>
+  </div>
 </div>
