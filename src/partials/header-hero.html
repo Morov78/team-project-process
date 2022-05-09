@@ -1,48 +1,35 @@
 <div class="background">
+  <div class="modal__open is-hidden" data-modal>
+    <button class="close__btn" data-modal-close>
+      <svg width="14" ; height="14" ;>
+        <use href="./img/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button class="header__button--modal" type="button">
+      Buy now
+      <svg width="6" height="10">
+        <use href="./img/symbol-defs.svg#icon-point"></use>
+      </svg>
+    </button>
+    <nav class="modal__nav">
+      <ul class="header__list--modal">
+        <li class="header__li--modal">
+          <a class="header__link--modal --current" href="">Home</a>
+        </li>
+        <li class="header__li--modal"><a class="header__link--modal" href="">About us</a></li>
+        <li class="header__li--modal">
+          <a class="header__link--modal" href="">How it’s made?</a>
+        </li>
+        <li class="header__li--modal">
+          <a class="header__link--modal" href="">Our products</a>
+        </li>
+        <li class="header__li--modal"><a class="header__link--modal" href="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="container">
     <header class="header">
-      <!-- Мобильное меню -->
-      <div class="mobile-menu">
-        <button class="header__menu-btn" type="button">
-          Buy now
-          <svg
-            class="header__icon"
-            width="6"
-            height="10"
-            viewBox="0 0 6 10"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1 1L5 5L1 9"
-              stroke="#D41443"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-        <nav class="header__nav-mobile">
-          <ul class="header__list-mobile">
-            <li class="header__item-mobile">
-              <a class="header__link-mobile" href="">Home</a>
-            </li>
-            <li class="header__item-mobile">
-              <a class="header__link-mobile" href="">About us</a>
-            </li>
-            <li class="header__item-mobile">
-              <a class="header__link-mobile" href="">How it’s made?</a>
-            </li>
-            <li class="header__item-mobile">
-              <a class="header__link-mobile" href="">Our products</a>
-            </li>
-            <li class="header__item-mobile">
-              <a class="header__link-mobile" href="">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- Коонец моб меню -->
+     
 
       <a href="" class="logo">
         <picture>
@@ -69,31 +56,33 @@
           </li>
         </ul>
       </nav>
-      <button class="header__btn-menu">
-        <svg width="20px" height="12px">
-          <use class="header__btn-open" href="img/symbol-defs.svg#icon-Burger"></use>
-          <use class="header__btn-close" href="img/symbol-defs.svg#icon-close"></use>
-        </svg>
-      </button>
-      <button class="header__btn" type="button">
-        Buy now
-        <svg
-          class="header__icon"
-          width="6"
-          height="10"
-          viewBox="0 0 6 10"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1 1L5 5L1 9"
-            stroke="#D41443"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
+      <div class="hidden" id="but2">
+        <button class="header__btn-menu" data-modal-open id="but1">
+          <svg width="20px" height="12px">
+            <use class="header__btn-open" href="img/symbol-defs.svg#icon-Burger"></use>
+            <use class="header__btn-close" href="img/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <button class="header__btn" type="button">
+          Buy now
+          <svg
+            class="header__icon"
+            width="6"
+            height="10"
+            viewBox="0 0 6 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L5 5L1 9"
+              stroke="#D41443"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
     </header>
 
     <section class="hero">
