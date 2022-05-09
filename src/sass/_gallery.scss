@@ -28,6 +28,7 @@
     }
 }
 
+
 .grid__item {
     // outline: 1px solid gold;
     border: 1px solid transparent;
@@ -129,5 +130,8 @@
     position: absolute;
     transform: scale(1.5);
 
-
+}
+.grid__item:focus {
+    outline: 3px solid #d41342;
+    outline-offset: -3px;
 }
