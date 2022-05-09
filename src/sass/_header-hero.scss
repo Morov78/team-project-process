@@ -17,6 +17,7 @@
 
   @include mq(desktop) {
     padding-top: 35px;
+    justify-content: space-between;
   }
 
   &__nav {
@@ -111,9 +112,7 @@
   }
 }
 
-.logo {
-  margin-right: auto;
-}
+
 
 .mobile-menu {
   display: none;
@@ -445,6 +444,20 @@
     }
   }
 }
+
+
+.logo {
+  
+    margin-right: auto;
+  
+}
+
+
+
+.header__nav{
+  margin-right: auto;
+}
+
 
 .hidden.is{
   display: none;
