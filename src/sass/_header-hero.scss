@@ -114,10 +114,6 @@
 
 
 
-.mobile-menu {
-  display: none;
-}
-
 .hero {
   position: relative;
   display: flex;
@@ -410,13 +406,13 @@
     position: absolute;
     z-index: -1;
     border-radius: 50%;
-    top: 0px;
-    left: 0px;
 
     content: '  ';
     background-color: #ffa5ba;
 
-    @include mq(mobile) {
+    @include mq(mobile-only) {
+      top: -14px;
+      left: -100px;
       width: 346px;
       height: 344px;
     }
@@ -446,6 +442,7 @@
 }
 
 
+
 .logo {
   
     margin-right: auto;
@@ -459,6 +456,8 @@
 }
 
 
+
 .hidden.is{
   display: none;
 }
+
