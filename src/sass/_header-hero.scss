@@ -112,8 +112,6 @@
   }
 }
 
-
-
 .hero {
   position: relative;
   display: flex;
@@ -291,7 +289,7 @@
   &__modal-btn {
     border: transparent;
     background-color: transparent;
-    color: pointer;
+    cursor: pointer;
 
     @include mq(tablet) {
       margin-top: 7px;
@@ -441,23 +439,19 @@
   }
 }
 
-
-
 .logo {
-  
-    margin-right: auto;
-  
-}
-
-
-
-.header__nav{
   margin-right: auto;
 }
 
+.header__nav {
+  margin-right: auto;
+}
 
-
-.hidden.is{
+.hidden.is {
   display: none;
 }
 
+// scroll
+html {
+  scroll-behavior: smooth;
+}
