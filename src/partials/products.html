@@ -1,4 +1,4 @@
-<section class="products" id="products">
+<section class="products">
   <div class="container">
     <p class="products__label">100% natural</p>
     <h2 class="products__title">products</h2>
@@ -9,7 +9,18 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button class="products__btn type="button"></button>
+        <button class="products__btn js-open-modal" data-modal="1"></button>
+        <div class="modal" data-modal="1">
+          <button class="modal__btn js-modal-close" type="button">
+            <svg class="modal__icon" width="14" height="14">
+              <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p class="modal__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et. dolore magna aliqua facilisis.
+          </p>
+        </div>
       </li>
       <li class="products__item">
         <h3 class="subtitle products__subtitle">ice coffee</h3>
@@ -17,7 +28,18 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button class="products__btn type="button"></button>
+        <button class="products__btn js-open-modal" data-modal="2"></button>
+        <div class="modal modal--orange" data-modal="2">
+          <button class="modal__btn js-modal-close" type="button">
+            <svg class="modal__icon" width="14" height="14">
+              <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p class="modal__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et. dolore magna aliqua facilisis.
+          </p>
+        </div>
       </li>
       <li class="products__item">
         <h3 class="subtitle products__subtitle">milkshakes</h3>
@@ -25,8 +47,20 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button class="products__btn" type="button"></button>
+        <button class="products__btn js-open-modal" data-modal="3"></button>
+        <div class="modal modal--green" data-modal="3">
+          <button class="modal__btn js-modal-close" type="button">
+            <svg class="modal__icon" width="14" height="14">
+              <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p class="modal__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et. dolore magna aliqua facilisis.
+          </p>
+        </div>
       </li>
     </ul>
   </div>
+  <link rel="stylesheet" href="" />
 </section>
