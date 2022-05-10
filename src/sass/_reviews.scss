@@ -32,6 +32,15 @@
   align-items: center;
   padding-left: 142px;
   padding-right: 142px;
+  @media screen and (max-width: 1199px) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   padding-top: 47px;
   padding-bottom: 39px;
   max-width: 1134px;
