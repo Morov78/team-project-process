@@ -14,8 +14,11 @@
 }
 
 .reviews__text {
+  display: flex;
   line-height: 1.86;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 0.04em;
   @media screen and (max-width: 1199px) {
     font-size: 14px;
