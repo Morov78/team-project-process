@@ -31,6 +31,9 @@
 (() => {
   const scroll = {
     onhide: document.querySelector("#li1"),
+    onhide2: document.querySelector("#li2"),
+    onhide3: document.querySelector("#li3"),
+    onhide4: document.querySelector("#li4"),
     // nohide: document.querySelector("#body1"),
     
     active: document.querySelector("[data-modal]"),
@@ -41,7 +44,10 @@
   };
 
   
-  scroll.onhide.addEventListener("click",toggleModal );
+  scroll.onhide.addEventListener("click", toggleModal);
+  scroll.onhide2.addEventListener("click", toggleModal);
+  scroll.onhide3.addEventListener("click", toggleModal);
+  scroll.onhide4.addEventListener("click",toggleModal );
   
   function toggleModal() {
     
