@@ -68,7 +68,6 @@
 }
 
 .slider__text {
-  position: relative;
   display: inline;
   background-repeat: no-repeat;
   background-position: center bottom -2px;
@@ -76,9 +75,9 @@
   background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
 }
 
-.reviews__icon:before {
-  position: absolute;
-  content: '';
+.reviews__icon {
+  margin-right: -13px;
+  margin-bottom: -7px;
 }
 .reviews__icons-small {
   display: inline-flex;
