@@ -13,10 +13,12 @@
     </button>
     <nav class="modal__nav">
       <ul class="header__list--modal">
-        <li class="header__li--modal">
+        <li class="header__li--modal" onclick="1">
           <a class="header__link--modal --current" href="">Home</a>
         </li>
-        <li class="header__li--modal"><a class="header__link--modal" href="#about">About us</a></li>
+        <li class="header__li--modal" data-modal-close>
+          <a id="li1" class="header__link--modal" href="#about">About us</a>
+        </li>
         <li class="header__li--modal">
           <a class="header__link--modal" href="#howMade">How it’s made?</a>
         </li>
