@@ -21,6 +21,10 @@
      overflow: hidden; 
     -webkit-overflow-scrolling: touch;
     }
+
+    &.moboff{
+        overflow: scroll;
+    }
 }
 // @media screen and (orientation: landscape){
 // &.is {
