@@ -9,26 +9,29 @@
     // padding-top: 118px;  
     background-position-y: 35%;
     font-size: 16px;
+    padding-bottom: 60px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1279.5px) {
 
-        padding-top: 131px;
-        padding-bottom: 165px;
+        // padding-top: 131px;
+        
         font-size: 14px;
     }
     
         
     
     background-image: linear-gradient(0deg, #fff5f6 93%, #fff 0, #fff 0);
-    padding-top: 80px;
-    padding-bottom: 113px;
+    // padding-top: 80px;
+    
     font-family: DM Sans;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
     text-align: center;
     letter-spacing: 0.04em;
+
+   
     
 }
 
@@ -103,6 +106,7 @@
     @media screen and (max-width:767.5px) {
         margin-bottom: 0;
         max-width: 100%;
+            width: 100%;
     }
 
 
@@ -231,6 +235,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 
+
 }
 }
 
@@ -239,6 +244,9 @@ flex-direction: column;
 
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+
+    
      
     @media screen and (max-width: 767.5px) {
         
@@ -250,7 +258,10 @@ flex-direction: column;
 
 
     @media screen and (min-width: 768px) {
-        padding: 12px 39px 12px 38px;
+
+        padding: 0;
+        margin-left: 0;
+
         display: flex;
         justify-content: center;
         }
@@ -264,8 +275,7 @@ flex-direction: column;
         }
     
     @media screen and (min-width: 1280px) {
-        padding: 10px 40px 10px 39px;
-
+        padding: 0;
 
     }
 }
@@ -282,6 +292,12 @@ flex-direction: column;
     background-color: var(--akcent-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+        
+
+    @media screen and (max-width: 767.5px) {
+        margin-bottom: 10px;
 
 
         }
@@ -346,23 +362,35 @@ flex-direction: column;
 
 }
 
-.modal__con.hide{
-    left:  -100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: top var(--kubik),
-    opacity var(--kubik),
-    visibility var(--kubik);
-}
+// .modal__con.hide {
+//     left: -100%;
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: top var(--kubik),
+//         opacity var(--kubik),
+//         visibility var(--kubik);
+// }
 
-.button__text {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    text-align: center;
-    margin-right: 13.17px;
-}
-.overlay {
+// .modal__con {
+//     display: block;
+//     position: absolute;
+//     width: 254px;
+//     height: 100vh;
+//     background-color: #E17992;
+//     z-index: 5;
+//     right: 0;
+//     top: 0;
+//     padding-top: 20px;
+//     opacity: 1;
+//     visibility: visible;
+//     transition: top var(--kubik),
+//         opacity var(--kubik),
+//         visibility var(--kubik);
+//     overflow-y: scroll;
+// }
+
+.overlay__con,
+.overlay__con--two {
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -376,22 +404,30 @@ flex-direction: column;
     transition: 0.3s all;
 }
 
-.modal {
+
+.modal__con,
+.modal__con--two {
+    z-index: 2;
+
     opacity: 0;
     visibility: hidden;
-
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     box-shadow: 0 3px 10px -1px rgba(0, 0, 0, .2);
     text-align: center;
     border-radius: 3px;
     background-color: #fff;
     transition: 0.3s all;
 
+    pointer-events:visible;
+
     @media screen and (max-width: 767.5px) {
-        width: 400px
+        max-width: 400px;
+        padding: 0 10px;
+
     }
 
     @media screen and (min-width: 768px) and (max-width:1279.5px) {
@@ -403,18 +439,27 @@ flex-direction: column;
     }
 }
 
-.modal.active,
-.overlay.active {
+
+.modal__con.active,
+.overlay__con.active,
+.modal__con--two.active,
+.overlay__con--two.active {
+
     opacity: 1;
     visibility: visible;
     border-radius: 20px;
 }
 
-.modal.active {
+
+.modal__con.active,
+.modal__con--two.active {
     background-color: #fff5f6;
+    overflow-y: scroll;
+    height: auto;
 }
 
-.modal__cross {
+.modal__cross--con {
+
     width: 15px;
     height: 15px;
     position: absolute;
@@ -441,6 +486,9 @@ flex-direction: column;
         margin: 10px;
         display: flex;
         justify-content: center;
+
+            flex-direction: column;
+
     }
 }
 
@@ -558,5 +606,12 @@ flex-direction: column;
     border: 0;
     overflow: hidden;
 
+}
+
+
+.current:hover,
+.current:focus{
+ background-color: var(--akcent-color);   
+ color: var(--main-color);
 
 }
