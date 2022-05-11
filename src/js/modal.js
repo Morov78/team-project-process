@@ -58,3 +58,27 @@
 })();
 
 
+//contacts
+ (() => {
+  const contact = {
+    btnMap: document.querySelector("#map"),
+    btnFran: document.querySelector("#fran"),
+    
+    location: document.querySelector("#location"),
+   
+    
+  };
+
+  
+  contact.btnMap.addEventListener("click", toggleModal);
+  contact.btnFran.addEventListener("click", toggleModal);
+  scroll.onhide3.addEventListener("click", toggleModal);
+  scroll.onhide4.addEventListener("click",toggleModal );
+  
+  function toggleModal() {
+    
+    contact.location.classList.toggle("hide");
+    // contact.delis.classList.toggle("is");
+    // contact.lookbtn.classList.toggle("is");
+  }
+})();
