@@ -215,7 +215,7 @@
 }}
 
 
-}
+
 .button__text {
     font-weight: 700;
     font-size: 16px;
@@ -285,7 +285,7 @@ flex-direction: column;
 
 
         }
-}
+
 
  
 .contact__button{
@@ -320,17 +320,8 @@ flex-direction: column;
 
    
 
-    @media screen and (min-width: 768px) {
-        margin-right: 15px;
-    }
+    
 
-
-&:hover,
-&:focus {
-    background-color: var(--background-hover);
-    color: var(--akcent-color);
-}
-}
 
 
 .contacts__franchise {
