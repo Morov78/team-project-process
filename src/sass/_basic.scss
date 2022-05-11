@@ -25,7 +25,12 @@
     &.moboff{
         overflow: scroll;
     }
+    
+    }
+&.no-click {
+    pointer-events: none;
 }
+
 // @media screen and (orientation: landscape){
 // &.is {
 //     overflow: auto;

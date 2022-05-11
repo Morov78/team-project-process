@@ -60,25 +60,59 @@
 
 //contacts
  (() => {
-  const contact = {
+   const contact = {
+    // btn for open
     btnMap: document.querySelector("#map"),
-    btnFran: document.querySelector("#fran"),
     
-    location: document.querySelector("#location"),
-   
     
-  };
+    //btn for closes
+     btnConClose: document.querySelector("#svgCon"),
+    // location change class
+     location: document.querySelector("#con1"),
+     bodyNoClick: document.querySelector("#body1"),
+    
+     
+   };
 
   
   contact.btnMap.addEventListener("click", toggleModal);
-  contact.btnFran.addEventListener("click", toggleModal);
-  scroll.onhide3.addEventListener("click", toggleModal);
-  scroll.onhide4.addEventListener("click",toggleModal );
+  
+   contact.btnConClose.addEventListener('click', toggleModal);
+  // scroll.onhide4.addEventListener("click",toggleModal );
   
   function toggleModal() {
     
-    contact.location.classList.toggle("hide");
-    // contact.delis.classList.toggle("is");
+    contact.location.classList.toggle("active");
+    contact.bodyNoClick.classList.toggle("no-click");
+    
+    
+  }
+})();
+
+//contacts
+ (() => {
+   const contact = {
+    // btn for open
+    btnFran: document.querySelector("#fran"),
+    
+    //btn for closes
+     btnConClose: document.querySelector("#svgcon--two"),
+    // location change class
+     bodyNoClick: document.querySelector("#body1"),
+     franchise: document.querySelector("#location"),
+     
+   };
+
+  
+  
+  contact.btnFran.addEventListener("click", toggleModal);
+   contact.btnConClose.addEventListener('click', toggleModal);
+  // scroll.onhide4.addEventListener("click",toggleModal );
+  
+  function toggleModal() {
+    contact.bodyNoClick.classList.toggle("no-click");
+    contact.franchise.classList.toggle("active");
+    // contact.btnBlock.classList.toggle("no-click");
     // contact.lookbtn.classList.toggle("is");
   }
 })();
