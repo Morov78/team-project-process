@@ -454,8 +454,8 @@ flex-direction: column;
 .modal__con.active,
 .modal__con--two.active {
     background-color: #fff5f6;
-    overflow-y: scroll;
-    height: auto;
+    overflow-y: overlay;
+    
 }
 
 .modal__cross--con {
