@@ -76,7 +76,6 @@
     }
   }
 
-  
   &__btn-close {
     display: none;
   }
@@ -92,7 +91,7 @@
     color: var(--accent-color);
     cursor: pointer;
 
-    @include transition(color);
+    @include transition(background-color);
     &:hover,
     &:focus {
       background-color: var(--background-hover);
@@ -203,7 +202,7 @@
     background-color: var(--main-color);
     cursor: pointer;
 
-    @include transition(color);
+    @include transition(background-color);
     &:hover,
     &:focus {
       background-color: var(--background-hover);
@@ -233,7 +232,7 @@
     background-color: var(--accent-color);
     cursor: pointer;
 
-    @include transition(color);
+    @include transition(background-color);
     &:hover,
     &:focus {
       background-color: var(--accent-color-hover);
