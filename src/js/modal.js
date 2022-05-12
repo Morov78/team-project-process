@@ -5,7 +5,7 @@
     
    
     
-
+    
     modal: document.querySelector("[data-modal]"),
     burger: document.querySelector("#but1"),
     noscroll: document.querySelector("#body1"),
