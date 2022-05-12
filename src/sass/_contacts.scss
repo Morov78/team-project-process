@@ -444,7 +444,7 @@ flex-direction: column;
 .overlay__con.active,
 .modal__con--two.active,
 .overlay__con--two.active {
-
+    position: relative;
     opacity: 1;
     visibility: visible;
     border-radius: 20px;
@@ -614,5 +614,78 @@ flex-direction: column;
  background-color: var(--akcent-color);   
  color: var(--main-color);
 
+}
+
+.box__con{
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility:visible;
+    padding: 0 16px;
+    transition: opacity var(--kubik),
+    visibility var(--kubik);
+
+    &.is-hide{
+        position: fixed;
+      opacity: 0;
+      visibility: hidden;
+    transition: opacity var(--kubik),
+    visibility var(--kubik);
+    z-index: 0;
+    }
+}
+
+@media screen and (max-width: 767.5px) {
+.modal__con
+{
+    max-width: 480px;
+    overflow: overlay;
+    padding: 0 10px;
+    max-height: 500px;
+    height: 100%;
+    /* height: calc(100% - 30%); */
+}
+
+.modal__con--two.active {
+    overflow-y: overlay;
+    max-width: 480px;
+    overflow: overlay;
+    padding: 0 10px;
+    max-height: 550px;
+    height: 100%;
+}
+}
+
+@media screen and (min-width: 768px){
+    .flex__con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal__con--two.active {
+        overflow-y: overlay;
+        height: max-content;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (min-width: 100px) {
+    .modal-franchise__address{
+    flex-basis: calc(100% / 3 - 20px);
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 24px;
+}
 }
 

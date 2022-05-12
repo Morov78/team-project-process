@@ -30,6 +30,12 @@
 &.no-click {
     pointer-events: none;
 }
+@media screen and (min-height: 580.5px){
+&.is.no-click {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+}
 
 // @media screen and (orientation: landscape){
 // &.is {
