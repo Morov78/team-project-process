@@ -83,6 +83,9 @@
       padding: 160px 40px 40px 40px;
     }
     @media screen and (max-width: 767.5px) {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
       &:not(:last-child) {
         margin-bottom: 140px;
       }
@@ -364,4 +367,14 @@
       }
     }
   }
+}
+
+//fix bag of team-lead
+@media screen and (max-width: 767.5px) {
+ .products_item{
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+  
 }
