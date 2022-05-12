@@ -70,7 +70,7 @@
     // location change class
      location: document.querySelector("#con1"),
      bodyNoClick: document.querySelector("#body1"),
-    
+    backDrop: document.querySelector("#drop"),
      
    };
 
@@ -84,8 +84,8 @@
     
     contact.location.classList.toggle("active");
     contact.bodyNoClick.classList.toggle("no-click");
-    
-    
+    contact.bodyNoClick.classList.toggle("is");
+    contact.backDrop.classList.toggle("is-hide");
   }
 })();
 
@@ -100,7 +100,8 @@
     // location change class
      bodyNoClick: document.querySelector("#body1"),
      franchise: document.querySelector("#location"),
-     
+     backDrop: document.querySelector("#drop"),
+     bodyNoClick: document.querySelector("#body1"),
    };
 
   
@@ -109,10 +110,12 @@
    contact.btnConClose.addEventListener('click', toggleModal);
   // scroll.onhide4.addEventListener("click",toggleModal );
   
-  function toggleModal() {
+   function toggleModal() {
+    
     contact.bodyNoClick.classList.toggle("no-click");
     contact.franchise.classList.toggle("active");
-    // contact.btnBlock.classList.toggle("no-click");
+    contact.backDrop.classList.toggle("is-hide");
+    contact.bodyNoClick.classList.toggle("is");
     // contact.lookbtn.classList.toggle("is");
   }
 })();
