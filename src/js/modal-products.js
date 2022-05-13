@@ -77,4 +77,4 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
   });
-}); // end ready
+}); 
