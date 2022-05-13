@@ -146,10 +146,11 @@
 .gallery {
     background-image: linear-gradient(#FFF5F6 43%, #FFFFFF 43%);
 
-    // padding-top: 60px;
-    // padding-bottom: 60px;
+    
     @media screen and(max-width: 295.5px) {
         overflow-x: scroll;
+        padding-top: 17px;
+        padding-bottom: 17px;
     }
 }
 

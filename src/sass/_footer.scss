@@ -1,24 +1,38 @@
 .footer {
     background-color: var(--bg-color-light-pink);
     position: relative;
+    padding-top: 120px;
+    padding-bottom: 8px;
+
+    @media screen and (min-width:768px) and (max-width: 1279.5px) {
+        padding-bottom: 8px;
+        padding-top: 40px;
+    }
+    
+    @media screen and (max-width: 767.5px) {
+        display: block;
+        padding-top: 48px;
+        padding-bottom: 20px;
+    }
 }
 .footer__flex {
     display: flex;
     
     align-items: flex-start;
-    padding-bottom: 60px;
-    padding-top: 60px;
     
-    @media screen and (max-width: 1199.5px) {
-        padding-bottom: 40px;
-        padding-top: 40px;
+    
+    @media screen and (min-width:768px) and (max-width: 1279.5px) {
+    margin-bottom: 48px;
+    justify-content: space-between;
     }
     @media screen and (max-width: 767.5px){
         display: block;
-        padding-top: 48px ;
+        margin-bottom: 48px;
     }
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         justify-content: space-between;
+        margin-bottom: 68px;
+
     }
 }
 .footer__name {
@@ -70,8 +84,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-left: auto;
-    padding-top: 8px;
+    
+    
 }
 .contacts__socials {
     display: flex;
@@ -136,18 +150,16 @@
     color: var(--accent-color);
   }
 .footer__copyright {
-    padding-top: 8px;
-    padding-bottom: 8px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
     color: var(--text-color-grey);
     @media screen and (max-width: 767.5px) {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 16px;
-        padding-bottom: 20px;
+        padding: 0;
+        max-width: 245px;
+        margin-left: auto;
+        margin-right: auto;
     }
     @media screen and (min-width: 768px) {
         line-height: 1.86;
@@ -166,7 +178,7 @@ bottom: 78px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.5px) {
-    bottom: 40px ;
+    bottom: 42px ;
 }
 
 @media screen and (min-width:1280px) {
@@ -174,4 +186,22 @@ bottom: 78px;
     bottom: 42px;
 }
 
+}
+
+.footer__up{
+  fill: var(--accent-color);
+  border: 0;
+  padding: 10px;
+  position: absolute;  
+ right: 10px;
+ bottom: 160px;
+ background-color: transparent;
+ transition: fill var(--kubik);
+ cursor: pointer;
+
+
+ &:hover{
+ fill: var(--icon-color); 
+ stroke: transparent;   
+ }
 }
