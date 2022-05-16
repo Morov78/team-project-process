@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://DmytroVoitovych.github.io/team-storm",
+  "homepage": "https://github.com/Morov78/team-project-process.git",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-storm/"
+    "build": "parcel build src/*.html --public-url /team-project-process/"
   },
   "repository": {
     "type": "git",
